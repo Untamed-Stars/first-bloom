@@ -13,7 +13,7 @@ scene.background = new THREE.Color(0x789b83);
 
 scene.fog = new THREE.FogExp2(
     0x789b83,
-    0.003
+    0.0008
 );
 
 // =====================================
@@ -24,7 +24,7 @@ const camera = new THREE.PerspectiveCamera(
     75,
     window.innerWidth / window.innerHeight,
     0.1,
-    1000
+    3000
 );
 
 camera.position.set(0, 5, 10);
