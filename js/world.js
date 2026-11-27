@@ -27,18 +27,10 @@ export function createTerrain(scene) {
 
     // Generate natural elevation
 
+   // Flat terrain
+
     for (let i = 0; i < positions.count; i++) {
-
-        const x = positions.getX(i);
-        const z = positions.getZ(i);
-
-        const elevation =
-            Math.sin(x * 0.018) * 3 +
-            Math.cos(z * 0.022) * 2 +
-            Math.sin((x + z) * 0.035) * 1.5 +
-            Math.cos(x * 0.009) * Math.sin(z * 0.012) * 4;
-
-        positions.setY(i, elevation);
+        positions.setY(i, 0);
     }
 
     geometry.computeVertexNormals();
@@ -46,7 +38,7 @@ export function createTerrain(scene) {
     // Terrain material
 
     const material = new THREE.MeshStandardMaterial({
-        color: 0x354b2d,
+        color: 0x263a20,,
         roughness: 1,
         metalness: 0
     });
