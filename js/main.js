@@ -98,8 +98,13 @@ document.getElementById('loading-screen').style.display = 'none';
 // GAME LOOP
 // =====================================
 
+const clock = new THREE.Clock();
+
 function animate() {
     requestAnimationFrame(animate);
+
+    const delta = Math.min(clock.getDelta(), 0.05);
+    player.update(delta);
 
     renderer.render(scene, camera);
 }
