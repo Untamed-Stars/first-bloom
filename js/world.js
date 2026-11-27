@@ -38,7 +38,7 @@ export function createTerrain(scene) {
     // Terrain material
 
     const material = new THREE.MeshStandardMaterial({
-        color: 0x263a20,,
+        color: 0x263a20,
         roughness: 1,
         metalness: 0
     });
