@@ -91,6 +91,7 @@ scene.add(sunlight);
 
 createTerrain(scene);
 
+const player = new Player(camera, renderer.domElement);
 document.getElementById('loading-screen').style.display = 'none';
 
 // =====================================
