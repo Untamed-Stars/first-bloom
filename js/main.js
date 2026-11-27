@@ -90,6 +90,8 @@ scene.add(sunlight);
 
 createTerrain(scene);
 
+document.getElementById('loading-screen').style.display = 'none';
+
 // =====================================
 // GAME LOOP
 // =====================================
