@@ -5,8 +5,8 @@ import * as THREE from 'three';
 // WORLD CONFIGURATION
 // =====================================
 
-const WORLD_SIZE = 500;
-const TERRAIN_SEGMENTS = 180;
+const WORLD_SIZE = 2000;
+const TERRAIN_SEGMENTS = 300;
 
 // =====================================
 // TERRAIN GENERATION
