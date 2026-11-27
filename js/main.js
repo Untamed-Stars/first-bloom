@@ -1,6 +1,7 @@
 
 import * as THREE from 'three';
 import { createTerrain } from './world.js';
+import { Player } from './player.js';
 
 // =====================================
 // SCENE
